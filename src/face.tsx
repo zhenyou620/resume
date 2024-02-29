@@ -7,7 +7,7 @@ type Props = {
 
 const faceImage: FC<Props> = ({ src, altText }) => {
   return (
-    <div>
+    <div className="w-16 h-16">
       <img src={src} alt={altText}></img>
     </div>
   );
