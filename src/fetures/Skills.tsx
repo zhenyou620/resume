@@ -9,14 +9,15 @@ interface SkillsProps {
 const Skills: FC<SkillsProps> = ({ skillsData }) => {
   return (
     <>
-      <h2 className="text-3xl">Skills</h2>
-      <div className="h-32 w-32">
+      <h2 className="mb-2 mt-8 text-3xl font-medium">Skills</h2>
+      <div className="flex flex-1 flex-wrap gap-3">
         {skillsData.map((skill) => (
           <SkillCard
             key={skill.name}
             url={skill.url ?? ''}
             altText={skill.altText ?? ''}
             name={skill.name}
+            percentage={skill.percentage}
           ></SkillCard>
         ))}
       </div>
