@@ -5,7 +5,7 @@ type Props = {
   altText: string;
 };
 
-const faceImage: FC<Props> = ({ url, altText }) => {
+const Face: FC<Props> = ({ url, altText }) => {
   return (
     <div className="w-48">
       <img src={url} alt={altText}></img>
@@ -13,4 +13,4 @@ const faceImage: FC<Props> = ({ url, altText }) => {
   );
 };
 
-export default faceImage;
+export default Face;
