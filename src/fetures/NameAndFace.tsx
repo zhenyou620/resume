@@ -12,10 +12,26 @@ const NameAndFace: FC = () => {
           Mayu Sakaguchi
         </span>
       </div>
-      <div className="flex flex-shrink-0 flex-col justify-end gap-3">
+      <div className="flex flex-shrink-0 flex-col justify-end gap-4">
         <p className="text-xl">
           Software developer.&nbsp;&nbsp;Born 29 July 1999.
         </p>
+        <div className="flex gap-4">
+          <a href="https://zenn.dev/zhenyou620" className="w-7">
+            <img
+              src="src/assets/imgs/zenn.svg"
+              alt="Zenn Link"
+              className="w-8"
+            ></img>
+          </a>
+          <a href="https://note.com/zhenyou620" className="w-18">
+            <img
+              src="src/assets/imgs/note.svg"
+              alt="Note Link"
+              className="w-8"
+            ></img>
+          </a>
+        </div>
       </div>
     </div>
   );

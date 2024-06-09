@@ -1,4 +1,4 @@
-import { type FC } from 'react';
+import { useState, useEffect, type FC } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 
@@ -9,7 +9,19 @@ type Props = {
   percentage: number;
 };
 
-const skillCard: FC<Props> = ({ url, altText, name, percentage }) => {
+const SkillCard: FC<Props> = ({ url, altText, name, percentage }) => {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setProgress(percentage);
+    }, 350);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [percentage]);
+
   return (
     <Card className="w-52">
       <CardContent>
@@ -23,7 +35,7 @@ const skillCard: FC<Props> = ({ url, altText, name, percentage }) => {
             <p className="text-base font-medium">{name}</p>
             <div className="flex items-center gap-1">
               <p className="text-xs">{percentage}%</p>
-              <Progress value={percentage} />
+              <Progress value={progress} />
             </div>
           </div>
         </div>
@@ -32,4 +44,4 @@ const skillCard: FC<Props> = ({ url, altText, name, percentage }) => {
   );
 };
 
-export default skillCard;
+export default SkillCard;
