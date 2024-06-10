@@ -7,4 +7,5 @@ https://zhenyou620.github.io/resume/
 - TypeScript
 - React
 - Tailwind CSS
+- shadcn/ui
 - Vite
