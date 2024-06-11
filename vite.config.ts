@@ -11,4 +11,13 @@ export default defineConfig({
     },
   },
   base: '/resume/',
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://zenn.dev/api',
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
 });
