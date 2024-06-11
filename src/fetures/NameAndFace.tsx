@@ -18,18 +18,10 @@ const NameAndFace: FC = () => {
         </p>
         <div className="flex gap-4">
           <a href="https://zenn.dev/zhenyou620" className="w-7">
-            <img
-              src="src/assets/imgs/zenn.svg"
-              alt="Zenn Link"
-              className="w-8"
-            ></img>
+            <img src="/resume/zenn.svg" alt="Zenn Link" className="w-8"></img>
           </a>
           <a href="https://note.com/zhenyou620" className="w-18">
-            <img
-              src="src/assets/imgs/note.svg"
-              alt="Note Link"
-              className="w-8"
-            ></img>
+            <img src="/resume/note.svg" alt="Note Link" className="w-8"></img>
           </a>
         </div>
       </div>
