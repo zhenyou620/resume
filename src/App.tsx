@@ -1,9 +1,9 @@
 import type { FC } from 'react';
+import NameAndFace from '@/fetures/personal/NameAndFace';
 import skillsData from './assets/skillsData';
-import NameAndFace from './fetures/NameAndFace';
-import Skills from './fetures/Skills';
+import ZennArticles from './fetures/articles/ZennArticles';
+import Skills from './fetures/skills/Skills';
 import '.././app/globals.css';
-import ZennArticles from './fetures/ZennArticles';
 
 const App: FC = () => {
   return (

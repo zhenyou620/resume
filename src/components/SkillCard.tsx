@@ -23,7 +23,7 @@ const SkillCard: FC<Props> = ({ url, altText, name, percentage }) => {
   }, [percentage]);
 
   return (
-    <Card className="w-52">
+    <Card className="w-">
       <CardContent>
         <div className="flex flex-row items-center gap-3 pt-4">
           <img

@@ -7,7 +7,7 @@ interface ZennArticleType {
 }
 
 interface ZennResponseType {
-  article: ZennArticleType[];
+  articles: ZennArticleType[];
 }
 
 export type { ZennArticleType, ZennResponseType };

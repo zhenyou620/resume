@@ -5,15 +5,14 @@ import type { FC } from 'react';
 const NameAndFace: FC = () => {
   return (
     <div className="mx-auto mb-0 mt-8 flex flex-col content-center gap-5">
-      {/* <Face url={faceImage} altText="My portrait"></Face> */}
-      <div className="flex items-center gap-5">
-        <div className="face h-14 w-14 rounded-xl"></div>
+      <div className="flex items-center gap-5 ">
+        <div className="face hidden h-14 w-14 rounded-xl sm:block"></div>
         <span className="-ml-1 text-6xl font-bold tracking-tight">
           Mayu Sakaguchi
         </span>
       </div>
       <div className="flex flex-shrink-0 flex-col justify-end gap-4">
-        <p className="text-xl">
+        <p className="text-base">
           Software developer.&nbsp;&nbsp;Born 29 July 1999.
         </p>
         <div className="flex gap-4">
