@@ -54,7 +54,7 @@
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.4",
     "typescript": "*",
-    "vite": "^4.4.5"
+    "vite": "^4.5.3"
   },
   "homepage": "https://zhenyou620.github.io/resume"
 }
