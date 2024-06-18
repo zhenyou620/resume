@@ -1,6 +1,6 @@
 import { useEffect, useState, type FC } from 'react';
-import { ZennArticle } from '@/components/ZennArticle';
-import { type ZennArticleType } from '@/types/ZennArticleType';
+import { ZennArticle } from './components/ZennArticle';
+import { type ZennArticleType } from './types/ZennArticleType';
 import { getZennArticles } from '@/utils/getArticles';
 
 const ZennArticles: FC = () => {

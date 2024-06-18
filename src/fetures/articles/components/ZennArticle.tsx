@@ -1,7 +1,7 @@
 import { type FC } from 'react';
 import dayjs from 'dayjs';
-import { type ZennArticleType } from '@/types/ZennArticleType';
-import { Card, CardContent } from './ui/card';
+import { Card, CardContent } from '../../../components/ui/card';
+import { type ZennArticleType } from '../types/ZennArticleType';
 
 type Props = {
   article: ZennArticleType;
